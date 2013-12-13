@@ -7,9 +7,10 @@
     {{widget('extendednavigation', 'topnavigation', {})|raw}}
 </div> 
     <header>
+        <div class="background-image-layer">
         <div class="desktop-nav">  
                 {{widget('extendednavigation', 'desktopnavigation', {})|raw}}
-            </div> 
+            </div>
         <div class="wrapper clearfix">
             <div class="companyheader clearfix">
                 {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
@@ -17,6 +18,7 @@
                 {{widget('content', 'textwidgetbox1', {content: '<h4>Lorem ipsum dolor sit amet.</h4>', lines: 'all'})|raw}}
             </div>
         </div>
+    </div> 
     </header>
 
     {% set menu = plugins.menu %}
