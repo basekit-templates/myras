@@ -12,7 +12,7 @@
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#ffffff",
-            "color3":"#569087",
+            "color3":"#888888",
             "color4":"#888888",
             "color5":"#000000",
             "color6":"#d4d3d3",
@@ -75,7 +75,7 @@
         },
         "font3": {
             "font-family": "Arial",
-            "font-size": "14px",
+            "font-size": "16px",
             "font-weight": "300",
             "line-height": "28px",
             "color": "@color-swatch5",
