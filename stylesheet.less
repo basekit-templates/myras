@@ -402,10 +402,6 @@ header {
     padding: 0;
 }
 
-.menu-item-prices{
-  float:right;
-}
-
 .menu-item-nutritional-title, .variant-price {
 
 }
@@ -422,10 +418,7 @@ header {
 
 .menu-item-promoted {
     background-color: hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(lighten(@color-swatch1,10%)), 0.6); 
-        border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+    border: none;
     padding: 3em 1em 1em 1em;
 }
 
@@ -2067,7 +2060,6 @@ hr.line.align-right {
     display: none;
     padding: 4em 0 0;
     margin-bottom: 3em;
-    border-bottom: 2px solid @color-swatch3;
   }
 
   .widget .extendednavigation li {
@@ -2175,10 +2167,12 @@ hr.line.align-right {
 .menu-item, .menu-section-item {
 margin-bottom: 1.5em;
 padding-bottom: 1.5em;
+border-bottom:1px solid @color-swatch5;
 }
 
 footer {
-  padding: 3em 0 0;
+  padding: 25px;
+  top:0;
 }
 
 .companytitle{
@@ -2194,16 +2188,23 @@ header {
   padding:0;
 }
 
+  /* CUSTOM CSS */
+
 .main{
-  padding:22px 0px;
-  top:50px;
+  padding:50px 0px 0px 0px;
 }
 
 .menu-name{
     top:-45px;
   }
 
+.menu-item:last-child, .menu-section-item:last-child{
+  border-bottom:none;
+}
 
+.contactform{
+  top:0;
+}
 
 
 
