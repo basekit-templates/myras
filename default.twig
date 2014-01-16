@@ -3,9 +3,6 @@
 {% block content %}
 
 {% include "menu-data.twig" %}
-<div class="top-nav">
-    {{widget('extendednavigation', 'topnavigation', {})|raw}}
-</div> 
     <header>
         <div class="background-image-layer">
         <div class="desktop-nav">  
@@ -22,6 +19,10 @@
     </header>
 
     {% set menu = plugins.menu %}
+
+    <div class="top-nav">
+        {{widget('extendednavigation', 'topnavigation', {})|raw}}
+    </div> 
 
         <div class="main wrapper clearfix">
             <div class="menu-header">

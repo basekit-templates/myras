@@ -15,44 +15,44 @@
             "color3":"#888888",
             "color4":"#888888",
             "color5":"#000000",
-            "color6":"#d4d3d3",
-            "color7":"#f4efec"
+            "color6":"#888888",
+            "color7":"#b1391a"
         },
         "Swatch 2": {
             "color1":"#ffffff",
             "color2":"#72d0eb",
-            "color3":"#09d4b5",
+            "color3":"#959FA8",
             "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color5":"#959FA8",
+            "color6":"#959FA8",
+            "color7":"#2f353e"
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#f3a41c",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color2":"#000000",
+            "color3":"#282828",
+            "color4":"#000000",
+            "color5":"#804f38",
+            "color6":"#804f38",
+            "color7":"#000000"
         },
         "Swatch 4": {
             "color1":"#ffffff",
             "color2":"#72d0eb",
-            "color3":"#3b3b3b",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color3":"#827b47",
+            "color4":"#593d31",
+            "color5":"#0FAC9F",
+            "color6":"#ffffff",
+            "color7":"#593d31"
         },
         "Swatch 5": {
             "color1":"#ffffff",
             "color2":"#72d0eb",
-            "color3":"#9553d9",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color3":"#A20404",
+            "color4":"#A20404",
+            "color5":"#999999",
+            "color6":"#ffffff",
+            "color7":"#A20404"
         }
     },
     "fontSwatch": {
@@ -70,7 +70,7 @@
             "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "34px",
-            "color": "@color-swatch5",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
@@ -84,7 +84,7 @@
         "font4": {
             "font-family": "Arial",
             "font-size": "15px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "24px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
@@ -100,7 +100,7 @@
         "font6": {
             "font-family": "Arial",
             "font-size": "14px",
-            "font-weight": "400",
+            "font-weight": "700",
             "line-height": "28px",
             "color": "@color-swatch6",
             "color-hover": "darken(@color-swatch6,20%)",
@@ -120,23 +120,23 @@
         },
         "font8": {
             "font-family": "Arial",
-            "font-size": "18px",
-            "font-weight": "400",
+            "font-size": "15px",
+            "font-weight": "300",
             "line-height": "28px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "Arvo",
-            "font-size": "18px",
-            "font-weight": "400",
-            "line-height": "28px",
-            "color": "@color-swatch5",
+            "font-family": "Arial",
+            "font-size": "14px",
+            "font-weight": "300",
+            "line-height": "25px",
+            "color": "@color-swatch7",
             "letter-spacing": "inherit"
         },
         "font10": {
             "font-family": "Abril Fatface",
-            "font-size": "32px",
+            "font-size": "44px",
             "font-weight": "300",
             "line-height": "42px",
             "color": "@color-swatch1",

@@ -1,0 +1,34 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header>
+    <div class="background-image-layer">
+    {{widget('menusections', 'menusections1', {})|raw}}
+    <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "MYRAS"})|raw}}
+             {{widget('content', 'headercontent', {"content":"<p>STEAKHOUSE & BAR</p>"})|raw}}
+        </div>
+    </div>
+       
+    </div><!--end wrapper clearfix-->
+</header>
+
+{{widget('menu', 'menu1', {})|raw}}
+
+<div class="wrapper clearfix">
+        {{widget('contactform', 'thisunqiuewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+    </div>
+
+<footer>
+    <div class="wrapper clearfix">
+        {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+    </div>
+
+    
+</footer>
+
+{% endblock %}
