@@ -3,32 +3,33 @@
 
 {% block content %}
 
-<header>
+<header class="bk-header">
     <div class="background-image-layer">
-    {{widget('menusections', 'menusections1', {})|raw}}
-    <div class="wrapper clearfix">
-        <div class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "MYRAS"})|raw}}
-             {{widget('content', 'headercontent', {"content":"<p>STEAKHOUSE & BAR</p>"})|raw}}
+    {% if pages|length > 1 %}
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    {% endif %}
+        <div class="wrapper clearfix">
+            <div class="companyheader clearfix">
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                {{widget('companyname', 'companyname', {"business": "MYRAS"})|raw}}
+                 {{widget('content', 'headercontent', {"content":"<p>STEAKHOUSE & BAR</p>"})|raw}}
+            </div>
         </div>
-    </div>
-       
     </div><!--end wrapper clearfix-->
 </header>
 
-{{widget('menu', 'menu1', {})|raw}}
-
 <div class="wrapper clearfix">
+    {{widget('menusections', 'menusections1', {})|raw}}
+</div>
+{{widget('menu', 'menu1', {})|raw}}
+    <div class="wrapper clearfix">
         {{widget('contactform', 'thisunqiuewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
     </div>
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
-    </div>
-
-    
+    </div>    
 </footer>
 
 {% endblock %}
