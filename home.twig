@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="feature-overlay">
-    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"", 'positionTopPercentage': '50','showBtn': true})|raw}}
+    {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
     <header class="bk-header">
     {% if pages|length > 1 %}
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
