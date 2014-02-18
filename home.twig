@@ -21,10 +21,14 @@
 <div class="wrapper clearfix">
     {{widget('menusections', 'menusections1', {})|raw}}
 </div>
+
 {{widget('menu', 'menu1', {})|raw}}
-    <div class="wrapper clearfix">
-        {{widget('contactform', 'thisunqiuewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
-    </div>
+
+<div class="wrapper clearfix">
+    {{widget('contactform', 'thisunqiuewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+    {{zone('main')|raw}}
+</div>
+
 <footer class="bk-footer">
     <div class="wrapper clearfix">
         {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
