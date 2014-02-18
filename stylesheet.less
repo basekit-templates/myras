@@ -14,7 +14,6 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 5%;
-  text-align:center;
 }
 
 .canvas  {
@@ -55,8 +54,9 @@ a:hover {
   background-color:@color-swatch1;
 }
 
-.menu-name {
+.menu-name, .menu-description {
   position: relative;
+  text-align:center;
 }
 
 .companyheader h4 {
@@ -104,6 +104,7 @@ blockquote {
 
 blockquote:before {
     font-size:@font-swatch10-font-size;
+    left:.1em;
 }
 
 /* ===============================
@@ -444,7 +445,7 @@ header.bk-header {
                     position: relative;
                     display: inline-block;
                     &.menu-item-promoted { /* menu-item-promoted */
-                        margin: 11px 1px 20px;
+                        margin: 14px 1px 20px;
                         .inner-item {
                             border: 0;
                             padding: 0;
@@ -629,6 +630,7 @@ header.bk-header {
 
 
 .menu-items, .menu-section-items {
+  text-align:center; 
 }
 
 .menu-availability {
@@ -702,15 +704,23 @@ header.bk-header {
     height:120px;
 }
 
+
 .menu-item-image-wrap {
-    background-repeat: no-repeat;
-    clear: both;
-    width: 125px;
-    margin: 0 auto;
-    border-radius: 100%;
-    height: 125px;
-    background-size: cover;
-    background-position: center;
+   background-size: cover;
+   background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   clear:both;
+   background-repeat: no-repeat;
+   height: 200px;
+   background-position: center;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   img {
+       display: none;
+   }
 }
 
 .menu-items,
@@ -2343,6 +2353,7 @@ hr.line.align-right {
 
   .widget .extendednavigation a.pull {
     width:100%;
+    top:0;
   }
 
   .widget .extendednavigation a.pull:after {
@@ -2352,6 +2363,11 @@ hr.line.align-right {
     margin:0px auto;
     display:table;
     margin-top:17px;
+    box-shadow:none;
+  }
+
+  .widget.extendednavigation ul li:hover > ul li .text, .widget.extendednavigation ul li:hover > ul li.folder .text {
+    background-image:none;
   }
 
   /* NAV */
@@ -2529,6 +2545,10 @@ border-bottom:1px solid @color-swatch5;
 
 
   /* COMPANY HEADER */
+
+  .companyheader {
+    padding: 0px 0px 45px 0px;
+  }
 
   .widget.companyname a {
     width:256px;
