@@ -34,11 +34,6 @@ body {
   padding: 0;
 }
 
-.feature-overlay {
-    width:100%;
-    position: relative;
-}
-
 .companytitle {
   position: relative;
   width: 100%;
@@ -119,12 +114,16 @@ header.bk-header {
    =============================== */
 
 .widget.extendednavigation {
+    .clearfix;
     text-align: center;
     padding: 5px 0 7px 0;
     background-color: rgba(1, 1, 1, 0.3);
-    margin: 0;
     width:100%;
     display: table;
+    .extendednavigation {
+        margin: 0 auto;
+        max-width: 848px;
+    }
 }
 
 .widget.extendednavigation ul {
@@ -656,6 +655,7 @@ footer.bk-footer {
     display: block;
     height: 500px;
     text-align: center;
+    background-color: rgba(0,0,0,0.3);
     @media @tablet {
         height: 400px;
     }

@@ -2,20 +2,20 @@
 
 {% block content %}
 
-<div class="feature-overlay">
+<div class="feature-content">
     {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
     <header class="bk-header">
-    {% if pages|length > 1 %}
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    {% endif %}
-    <div class="wrapper">
-        <div class="companyheader">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-            {{widget('content', 'headercontent', {"content":"<h4>STEAKHOUSE &amp; BAR</h4>"})|raw}}
+        {% if pages|length > 1 %}
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        {% endif %}
+        <div class="wrapper">
+            <div class="companyheader">
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                {{widget('content', 'headercontent', {"content":"<h4>STEAKHOUSE &amp; BAR</h4>"})|raw}}
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 </div>
 
 <div class="wrapper clearfix">
