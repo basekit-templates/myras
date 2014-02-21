@@ -7,6 +7,7 @@
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
     "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
     },
+    "colorSwatchEnabled": 1,
     "colorSwatches":
     {
         "Swatch 1": {
