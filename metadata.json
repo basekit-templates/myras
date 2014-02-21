@@ -7,7 +7,6 @@
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
     "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
     },
-    "colorSwatchEnabled": 1,
     "colorSwatches":
     {
         "Swatch 1": {
@@ -60,18 +59,18 @@
        "title": "Arvo",
         "font1": {
             "font-family": "\"Abril Fatface\", \"Palatino Linotype\", serif",
-            "font-size": "24px",
+            "font-size": "35px",
             "font-weight": "200",
-            "line-height": "44px",
+            "line-height": "47px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
             "font-family": "\"Abril Fatface\", \"Palatino Linotype\", serif",
-            "font-size": "24px",
+            "font-size": "28px",
             "font-weight": "inherit",
-            "line-height": "34px",
-            "color": "@color-swatch4",
+            "line-height": "30px",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font3": {
