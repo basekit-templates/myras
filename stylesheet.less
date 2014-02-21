@@ -548,7 +548,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 
-   .menu-subsection {
+.menu-subsection {
   padding:0px;
   margin:0px;
   text-align: center;
@@ -589,12 +589,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                     padding: 2em 0 0.5em;
                 }
                 text-align: center;
-                h1 { /* menu-name */
-                    padding: 0;
-                }
-                h2 { /* MENU-SUBSECTION-HEADER */
-                    padding: 0;
-                }
                 p { /* description */
                     padding: 5px 0 0; 
                 }
@@ -813,8 +807,18 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
                 .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
                     padding: 0;
-                    margin: 0;
+                    margin: 0 0 1em;
                     position: relative;
+                    padding: 1em 2em;
+                    &:before {
+                       content: " ";
+                       position: absolute;
+                       top: 3px;
+                       left: 3px;
+                       right: 3px;
+                       bottom: 3px;
+                       border: 1px solid @color-swatch4;
+                   }
                     @media @mobile {
                         padding: 0 2em 0;
                     }
@@ -1068,7 +1072,7 @@ footer.bk-footer {
   display:table;
   min-height:0;
   background-color:transparent;
-  border-top: 1px solid @color-swatch2;
+  border-top: 1px solid @color-swatch4;
 }
 
 /* ===============================
@@ -1474,10 +1478,6 @@ footer.bk-footer {
     top:-50px;
   }
 
-  footer.bk-footer {
-    padding: 3em 0em 4em 0em;
-  }
-
 
       /* CLICK TO CALL */
 
@@ -1560,10 +1560,6 @@ border-bottom:1px solid @color-swatch5;
 .contactform{
   top:0;
 }
-
-  footer.bk-footer {
-    padding: 2em 0em;
-  }
 
 
     /* CLICK TO CALL */
