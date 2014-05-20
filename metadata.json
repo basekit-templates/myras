@@ -2,6 +2,7 @@
     "name":"myras",
     "thumbnail":"myras.png",
     "screenshot":"myras.png",
+    "templateType":"menu",
     "tags": {
     "en": ["clean", "menu", "professional", "grillhouse", "restaurant", "american", "simple", "serif"],
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
